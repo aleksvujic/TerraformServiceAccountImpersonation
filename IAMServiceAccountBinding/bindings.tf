@@ -3,6 +3,6 @@ resource "google_service_account_iam_binding" "iam_serviceAccountTokenCreator" {
   role               = "roles/iam.serviceAccountTokenCreator"
 
   members = [
-    "user:${var.token_creator_email}"
+    "user:${var.token_creator_email}",
   ]
 }
