@@ -1,6 +1,7 @@
 output "terraform_service_account" {
   value = {
-    name  = google_service_account.terraform.name
-    email = google_service_account.terraform.email
+    name    = google_service_account.terraform.name
+    email   = google_service_account.terraform.email
+    member  = google_service_account.terraform.member
   }
 }
