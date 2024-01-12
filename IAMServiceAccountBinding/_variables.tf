@@ -5,3 +5,8 @@ variable "terraform_service_account" {
     member  = string
   })
 }
+
+
+variable "token_creator_email" {
+  type = string  
+}

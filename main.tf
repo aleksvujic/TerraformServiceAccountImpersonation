@@ -54,6 +54,7 @@ module "demo-IAMServiceAccountBinding" {
   # }
 
   terraform_service_account = module.demo-IAMServiceAccount.terraform_service_account
+  token_creator_email       = var.token_creator_email
 }
 
 
@@ -62,6 +63,8 @@ module "demo-Project" {
   # providers = {
   #   google = google.demo
   # }
+
+  org_id = var.org_id
 }
 
 
